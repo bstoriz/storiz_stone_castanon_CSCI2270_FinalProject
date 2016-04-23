@@ -14,9 +14,10 @@ After the user answers are correct, the program will display the number of quest
 using namespace std;
 
 int main(){
-    bool powerSwitch = true;
+    quizShow qs;
+    bool powerSwitch = true; //allows main menu to re-appear until user quits
     int mainMenuChoice;
-    while(powerSwitch == true){
+    while(powerSwitch == true){ //while the user hasn't chosen quit...
         cout << "====== Welcome ======" << endl << endl; //standard welcome banner
         cout << "Choose a number to take the corresponding quiz" << endl; //user prompt
         //initial ideas for quiz topics. i honestly have no ideas what will be "fun" to quiz on
@@ -27,18 +28,18 @@ int main(){
         cout << "5. Quit" << endl;
         cin >> mainMenuChoice;
         if(mainMenuChoice == 1){
-
+            qs.topicHistory();
         }
         if(mainMenuChoice == 2){
-
+            qs.topicMath();
         }
         if(mainMenuChoice == 3){
-
+            qs.topicScience();
         }
         if(mainMenuChoice == 4){
-
+            qs.topicRandomTrivia();
         }
-        if(mainMenuChoice == 5){
+        if(mainMenuChoice == 5){ //standard exit message, ends the while loop, exits program.
             cout << "Thanks for playing!" << endl;
             powerSwitch = false;
             return 0;
