@@ -27,6 +27,7 @@ class quizShow
         void topicMath();
         void topicScience();
         void topicRandomTrivia();
+        void readFile(char *fileName, int numQuestions);
     protected:
 
     private:

@@ -14,7 +14,7 @@ After the user answers are correct, the program will display the number of quest
 using namespace std;
 
 int main(){
-    quizShow qs;
+    quizShow *qs = new quizShow();
     bool powerSwitch = true; //allows main menu to re-appear until user quits
     int mainMenuChoice;
     while(powerSwitch == true){ //while the user hasn't chosen quit...
@@ -28,16 +28,16 @@ int main(){
         cout << "5. Quit" << endl;
         cin >> mainMenuChoice;
         if(mainMenuChoice == 1){
-            qs.topicHistory();
+            qs->topicHistory();
         }
         if(mainMenuChoice == 2){
-            qs.topicMath();
+            qs->topicMath();
         }
         if(mainMenuChoice == 3){
-            qs.topicScience();
+            qs->topicScience();
         }
         if(mainMenuChoice == 4){
-            qs.topicRandomTrivia();
+            qs->topicRandomTrivia();
         }
         if(mainMenuChoice == 5){ //standard exit message, ends the while loop, exits program.
             cout << "Thanks for playing!" << endl;
