@@ -23,6 +23,12 @@ class quizShow
     public:
         quizShow();
         ~quizShow();
+        void topicEnglish();
+        void topicArt();
+        void topicCompSci();
+        void topicPhysics();
+        void topicChemistry();
+        void topicGeography();
         void topicHistory();
         void topicMath();
         void topicScience();
