@@ -1,3 +1,3 @@
 Name the female artist who painted "Woman Bathing" and "Mother and Child?",1. Mary Cassatt,2. Berthe Morisot,3. Kara Walker,1
-Painter Gilbert Stuart, who lived from 1755-1828, was most well known for his portraits of what U.S. President?,1. Thomas Jefferson,2. John Adams,3. George Washington,3
-The epic poem written over 2600 years ago called the Iliad, who wrote it?,1. Homer,2. Achilles, 3. Mark Twain,1
+Painter Gilbert Stuart who lived from 1755-1828 was most well known for his portraits of what U.S. President?,1. Thomas Jefferson,2. John Adams,3. George Washington,3
+Who wrote the epic poem written over 2600 years ago called the Iliad?,1. Homer,2. Achilles, 3. Mark Twain,1
