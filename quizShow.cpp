@@ -18,6 +18,29 @@ Each quiz topic has a separate .txt file that contains the question and correspo
 Each function calls it's corresponding .txt file
 */
 
+void quizShow::topicArt(){
+    readFile("topicArt.txt", 3);
+}
+
+void quizShow::topicEnglish(){
+    readFile("topicEnglish.txt", 3);
+}
+
+void quizShow::topicCompSci(){
+    readFile("topicComSci.txt", 3);
+}
+
+void quizShow::topicPhysics(){
+    readFile("topicPhysics.txt", 3);
+}
+
+void quizShow::topicChemistry(){
+    readFile("topicChemistry.txt", 3);
+}
+
+void quizShow::topicGeography(){
+    readFile("topicGeography.txt", 3);
+}
 void quizShow::topicHistory(){
     readFile("topicHistory.txt", 3); //reads the history .txt file
 
