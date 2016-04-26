@@ -31,7 +31,7 @@ int main(){
         cout << "8. Math" << endl;
         cout << "9. Science" << endl;
         cout << "10. Random Trivia" << endl;
-        cout << "11". Quit" << endl;
+        cout << "11. Quit" << endl;
         cin >> mainMenuChoice;
         cout << endl;
         cout << endl;
