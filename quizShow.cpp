@@ -89,7 +89,23 @@ void quizShow::readFile(char *fileName, int numQuestions) {
             }
         }
         inFile.close();
+
+        cout << questions[0].answer1 << endl;
+
     } else {
         cout << "Could not read file." << endl;
+    }
+}
+
+void quizShow::askQuestions(topicQuestion questions[]) {
+    for (int i = 0; i < 3; i++) {
+        cout << questions[i].question << endl;
+        cout << questions[i].answer1 << endl;
+        cout << questions[i].answer2 << endl;
+        cout << questions[i].answer3 << endl;
+
+        string userAnswer;
+        cin.ignore();
+        getline(cin, userAnswer);
     }
 }

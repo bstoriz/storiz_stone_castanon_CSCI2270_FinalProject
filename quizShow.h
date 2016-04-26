@@ -34,6 +34,7 @@ class quizShow
         void topicScience();
         void topicRandomTrivia();
         void readFile(char *fileName, int numQuestions);
+        void askQuestions(topicQuestion questions[]);
     protected:
 
     private:
