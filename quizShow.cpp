@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "stdlib.h"
 
 using namespace std;
 
@@ -18,7 +19,8 @@ Each function calls it's corresponding .txt file
 */
 
 void quizShow::topicHistory(){
-    readFile("topicHistory.txt", 3);
+    readFile("topicHistory.txt", 3); //reads the history .txt file
+
 }
 
 void quizShow::topicMath(){
@@ -59,7 +61,7 @@ void quizShow::readFile(char *fileName, int numQuestions) {
 
                 string token1;
                 getline(ss, token1, ',');
-                int answer = stoi(token1);
+                int answer = atoi(token1.c_str()); //atoi vs stoi to be more accessible to people not using c++ 11
                 questions[i].correctAnswer = answer;
             }
         }

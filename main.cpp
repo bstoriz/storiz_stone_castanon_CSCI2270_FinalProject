@@ -27,6 +27,9 @@ int main(){
         cout << "4. Random Trivia" << endl;
         cout << "5. Quit" << endl;
         cin >> mainMenuChoice;
+        cout << endl;
+        cout << endl;
+        cout << endl;
         if(mainMenuChoice == 1){
             qs->topicHistory();
         }
