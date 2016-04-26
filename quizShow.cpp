@@ -27,7 +27,7 @@ void quizShow::topicEnglish(){
 }
 
 void quizShow::topicCompSci(){
-    readFile("topicComSci.txt", 3);
+    readFile("topicCompSci.txt", 3);
 }
 
 void quizShow::topicPhysics(){
