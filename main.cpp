@@ -34,8 +34,6 @@ int main(){
         cout << "11. Quit" << endl;
         cin >> mainMenuChoice;
         cout << endl;
-        cout << endl;
-        cout << endl;
         if(mainMenuChoice == 1){
             qs->topicArt();
         }

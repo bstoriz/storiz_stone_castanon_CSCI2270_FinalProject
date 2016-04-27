@@ -1,3 +1,15 @@
-A means of encoding text in which each symbol is represented by 16 bits.,1. ISO,2. Unicode,3. LZW,2
-A nibble is how many bits?,1. 3,2. 7,3. 4,3
-Who is the best teacher for Data Scrtures?,1. Rhonda Hoenigman,2. Daniel Mastas,3. Katlin Ganteng,1
+A means of encoding text in which each symbol is represented by 16 bits.
+1. ISO
+2. Unicode
+3. LZW
+2
+A nibble is how many bits?
+1. 3
+2. 7
+3. 4
+3
+Who is the best teacher for Data Stuctures?
+1. Rhonda Hoenigman
+2. Daniel Mastas
+3. Don't be mean the answer is Rhonda
+1

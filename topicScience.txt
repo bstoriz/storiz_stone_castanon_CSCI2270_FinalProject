@@ -1,3 +1,15 @@
-Which element has the highest mass?,1. Hydrogen,2. Helium,3. Lead,3
-Which of these is NOT a form of energy we get from the sun?,1. Kinetic,2. Heat,3. Light,1
-Which of these does NOT have DNA?,1. A computer,2. A dog,3. A tree,1
+Which element has the highest mass?
+1. Hydrogen
+2. Helium
+3. Lead
+3
+Which of these is NOT a form of energy we get from the sun?
+1. Kinetic
+2. Heat
+3. Light
+1
+Which of these does NOT have DNA?
+1. A computer
+2. A dog
+3. A tree
+1

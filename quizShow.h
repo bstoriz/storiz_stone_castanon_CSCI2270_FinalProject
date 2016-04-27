@@ -11,11 +11,21 @@ the program will print the question and three answers and compare the user input
 */
 
 struct topicQuestion{
-    std::string question; //read in from file and printed
-    std::string answer1; //read in from file and printed
-    std::string answer2; //read in from file and printed
-    std::string answer3; //read in from file and printed
-    int correctAnswer; //read in from file and compared to user input
+    std::string question1; //read in from file and printed
+    std::string question2;
+    std::string question3;
+    std::string answer11; //read in from file and printed
+    std::string answer12; //read in from file and printed
+    std::string answer13; //read in from file and printed
+    std::string answer21; //read in from file and printed
+    std::string answer22; //read in from file and printed
+    std::string answer23; //read in from file and printed
+    std::string answer31; //read in from file and printed
+    std::string answer32; //read in from file and printed
+    std::string answer33; //read in from file and printed
+    int correctAnswer1; //read in from file and compared to user input
+    int correctAnswer2; //read in from file and compared to user input
+    int correctAnswer3; //read in from file and compared to user input
 };
 
 class quizShow
@@ -34,7 +44,6 @@ class quizShow
         void topicScience();
         void topicRandomTrivia();
         void readFile(char *fileName, int numQuestions);
-        void askQuestions(topicQuestion questions[]);
     protected:
 
     private:

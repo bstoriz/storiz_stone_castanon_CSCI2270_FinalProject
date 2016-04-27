@@ -1,3 +1,15 @@
-Which state is called the Volunteer State?,1. Colorado,2. Tennessee,3. Massachusetts,2
-Which shoe company did Michael Jordan famously promote?,1. Adidas,2. Sketchers,3. Nike,3
-The Walker Cup is competed for in which sport?,1.Golf,2. Soccer,3. Curling,1
+Which state is called the Volunteer State?
+1. Colorado
+2. Tennessee
+3. Massachusetts
+2
+Which shoe company did Michael Jordan famously promote?
+1. Adidas
+2. Sketchers
+3. Nike
+3
+The Walker Cup is competed for in which sport?
+1.Golf
+2. Soccer
+3. Curling
+1
