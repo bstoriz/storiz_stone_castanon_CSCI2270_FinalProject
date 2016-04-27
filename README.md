@@ -8,6 +8,17 @@ This program is a text based quiz game written in C++. The user uses the program
 
 ****************************
 
+*** KNOWN ISSUES ***
+
+'^' Represents work in progress
+
+^Currently questions answered (in)correctly aren't being kept track of and removed/moved to the end of the list as necessary
+
+Total number of questions and number of questions answered incorrectly aren't being kept track of
+
+********************
+
+
 *** SYSTEM REQUIREMENTS ***
 
 OS: Yes
