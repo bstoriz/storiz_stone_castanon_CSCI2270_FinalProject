@@ -120,6 +120,7 @@ void quizShow::readFile(char *fileName, int numQuestions) {
         cout << tq.answer11 << endl;
         cout << tq.answer12 << endl;
         cout << tq.answer13 << endl;
+        totalNumberOfQuestions++;
         //cin.ignore();
         cin >> userChoiceAnswer;
         answers[0] = userChoiceAnswer;
@@ -133,6 +134,7 @@ void quizShow::readFile(char *fileName, int numQuestions) {
         cout << tq.answer21 << endl;
         cout << tq.answer22 << endl;
         cout << tq.answer23 << endl;
+        totalNumberOfQuestions++;
        // cin.ignore();
         cin >> userChoiceAnswer;
         answers[1] = userChoiceAnswer;
@@ -145,6 +147,7 @@ void quizShow::readFile(char *fileName, int numQuestions) {
         cout << tq.answer31 << endl;
         cout << tq.answer32 << endl;
         cout << tq.answer33 << endl;
+        totalNumberOfQuestions++;
         //cin.ignore();
         cin >> userChoiceAnswer;
         answers[2] = userChoiceAnswer;
@@ -154,10 +157,19 @@ void quizShow::readFile(char *fileName, int numQuestions) {
         }
         inFile.close();
 
-        cout << "You got " << numberOfCorrect << " answers correct." << endl;
-
     }
     else {
         cout << "Could not read file." << endl;
+    }
+}
+
+void quizShow::printScore() {
+    cout << "You got " << numberOfCorrect << " questions right." << endl;
+    cout << "You answered " << totalNumberOfQuestions << " questions." << endl;
+    if (totalNumberOfQuestions != 0) {
+        double score = (double(numberOfCorrect) / totalNumberOfQuestions);
+        cout << "Your score is " << score * 100 << "%." << endl;
+    } else {
+        cout << "No questions have been answered." << endl;
     }
 }

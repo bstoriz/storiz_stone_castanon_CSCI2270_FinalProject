@@ -31,7 +31,8 @@ int main(){
         cout << "8. Math" << endl;
         cout << "9. Science" << endl;
         cout << "10. Random Trivia" << endl;
-        cout << "11. Quit" << endl;
+        cout << "11. Print Score" << endl;
+        cout << "12. Quit" << endl;
         cin >> mainMenuChoice;
         cout << endl;
         if(mainMenuChoice == 1){
@@ -64,7 +65,10 @@ int main(){
         if(mainMenuChoice == 10){
             qs->topicRandomTrivia();
         }
-        if(mainMenuChoice == 11){ //standard exit message, ends the while loop, exits program.
+        if(mainMenuChoice == 11) {
+            qs->printScore();
+        }
+        if(mainMenuChoice == 12){ //standard exit message, ends the while loop, exits program.
             cout << "Thanks for playing!" << endl;
             powerSwitch = false;
             return 0;
