@@ -19,6 +19,7 @@ Each function calls it's corresponding .txt file
 */
 
 void quizShow::topicArt(){
+
     readFile("topicArt.txt", 3);
 }
 
@@ -164,11 +165,16 @@ void quizShow::readFile(char *fileName, int numQuestions) {
 }
 
 void quizShow::printScore() {
-    cout << "You got " << numberOfCorrect << " questions right." << endl;
-    cout << "You answered " << totalNumberOfQuestions << " questions." << endl;
+    int totalnumberWrong= totalNumberOfQuestions - numberOfCorrect;
+
+    cout<<"You answered "<<totalNumberOfQuestions<<" questions."<<endl;
+    cout<<"You got " <<numberOfCorrect<< " questions right."<<endl;
+    cout<<"You got "<<totalnumberWrong<<" wrong."<<endl;
+
     if (totalNumberOfQuestions != 0) {
         double score = (double(numberOfCorrect) / totalNumberOfQuestions);
         cout << "Your score is " << score * 100 << "%." << endl;
+
     } else {
         cout << "No questions have been answered." << endl;
     }
