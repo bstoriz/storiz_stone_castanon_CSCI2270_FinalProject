@@ -13,9 +13,24 @@ After the user answers are correct, the program will display the number of quest
 
 using namespace std;
 
+
 int main(){
     quizShow *qs = new quizShow();
     bool powerSwitch = true; //allows main menu to re-appear until user quits
+
+    bool answered1 = true; //switches are used to make sure the player doesnt pick the same category
+    bool answered2 = true;
+    bool answered3 = true;
+    bool answered4 = true;
+    bool answered5 = true;
+    bool answered6 = true;
+    bool answered7 = true;
+    bool answered8 = true;
+    bool answered9 = true;
+    bool answered10 =true;
+
+
+
     int mainMenuChoice;
     while(powerSwitch == true){ //while the user hasn't chosen quit...
         cout << "====== Welcome ======" << endl << endl; //standard welcome banner
@@ -35,36 +50,153 @@ int main(){
         cout << "12. Quit" << endl;
         cin >> mainMenuChoice;
         cout << endl;
-        if(mainMenuChoice == 1){
-            qs->topicArt();
+        if(mainMenuChoice == 1)
+        {
+                if(answered1==true)
+                {
+                    qs->topicArt();
+                    answered1=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 2){
-            qs->topicEnglish();
+
+        if(mainMenuChoice == 2)
+        {
+
+                if( answered2 == true)
+                {
+                    qs->topicEnglish();
+                    answered2=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 3){
-            qs->topicCompSci();
+
+        if(mainMenuChoice == 3)
+        {
+
+                if(answered3==true)
+                {
+                    qs->topicCompSci();
+                    answered3=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 4){
-            qs->topicPhysics();
+
+        if(mainMenuChoice == 4)
+        {
+
+                if(answered4==true)
+                {
+                   qs->topicPhysics();
+                   answered4=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
+
         }
-        if(mainMenuChoice == 5){
-            qs->topicChemistry();
+
+        if(mainMenuChoice == 5)
+        {
+
+                if(answered5==true)
+                {
+                   qs->topicChemistry();
+                   answered5=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 6){
-            qs->topicGeography();
+
+        if(mainMenuChoice == 6)
+        {
+
+                if(answered6==true)
+                {
+                   qs->topicGeography();
+                   answered6=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 7){
-            qs->topicHistory();
+
+        if(mainMenuChoice == 7)
+        {
+                if(answered7==true)
+                {
+                   qs->topicHistory();
+                   answered7=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 8){
-            qs->topicMath();
+
+        if(mainMenuChoice == 8)
+        {
+                if(answered8==true)
+                {
+                   qs->topicMath();
+                   answered8=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 9){
-            qs->topicScience();
+
+        if(mainMenuChoice == 9)
+        {
+
+                if(answered9==true)
+                {
+                    qs->topicScience();
+                    answered9=false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
-        if(mainMenuChoice == 10){
-            qs->topicRandomTrivia();
+
+        if(mainMenuChoice == 10)
+        {
+                if(answered10==true)
+                {
+                    qs->topicRandomTrivia();
+                    answered10 = false;
+                }
+                else
+                {
+                    cout<<"You already answered these questions"<<endl;
+                    cout<<"Please choose another category"<<endl;
+                }
         }
+
         if(mainMenuChoice == 11) {
             qs->printScore();
         }
